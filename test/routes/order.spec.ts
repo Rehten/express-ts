@@ -18,9 +18,9 @@ const order: Order = {
     complete: false
 };
 
-describe(`userRoute`, () => {
+describe(`orderRoute`, () => {
     it('should respond with HTTP 404 status because there is no order', async  () => {
-        return chai.request(app).get(`/store/orders/${order.id}`).then(res => {
+        return chai.request(app).get(`/store/orders/${999}`).then(res => {
             expect(res.status).to.be.equal(404);
         });
     });
@@ -40,7 +40,7 @@ describe(`userRoute`, () => {
     });
 
     it('should return 404 when it is trying to remove an order because the order does not exist', async () => {
-        return chai.request(app).del(`/store/orders/${order.id}`).then(res => {
+        return chai.request(app).del(`/store/orders/${999}`).then(res => {
             expect(res.status).to.be.equal(404);
         });
     });
