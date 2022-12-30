@@ -28,7 +28,7 @@
     "@types/mocha": "^5.2.7",
     "chai": "^4.2.0",
     "chai-http": "^4.3.0",
-    "mocha": "^6.2.1",
+    "mocha": "^10.2.0",
     "stryker-api": "^0.24.1",
     "stryker-html-reporter": "^0.18.1",
     "stryker-mocha-framework": "^0.15.1",
